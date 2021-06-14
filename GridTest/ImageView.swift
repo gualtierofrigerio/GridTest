@@ -44,6 +44,11 @@ struct ImageView: View {
         imageLoader.loadImage(atUrl: urlString)
     }
     
+    static var empty: some View {
+        Image(systemName: "exclamationmark.triangle")
+            .font(.largeTitle)
+    }
+    
     private var urlString:String = ""
 }
 
